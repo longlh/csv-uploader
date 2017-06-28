@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Upload Demo</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="/node_modules/plupload/js/plupload.full.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+</head>
+<body>
+	<div id="upload-completed-msg" class="ui message transition hidden">
+		<i class="close icon"></i>
+		<div class="header">
+		Upload completed!
+		</div>
+		<p>The data will be processed by background workers. You can click refresh button to get informed of the progress.</p>
+	</div>
+	<div class="ui container">
+		<div class="ui basic ui segment">
+			<span>Total records: </span><span id="count">-</span>
+			<a href="#" id="force-count">
+				<i class="refresh icon"></i>
+			</a>
+		</div>
+		<div class="ui basic ui segment">
+			<div class="ui form">
+
+				<h4 class="ui dividing header">Samples CSVs</h4>
+				<div class="field">
+					<a href="/upload/sample-min.csv">Sample file (small)</a><br>
+					<a href="/upload/sample.csv">Sample file (large)</a>
+				</div>
+				<h4 class="ui dividing"></h4>
+				<div class="field">
+					<button id="browse-button" type="button"
+						class="ui button">Choose a file</button>
+					<span id="filename"></span>
+				</div>
+				<button id="upload-button" type="button"
+					class="ui primary button">Upload</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/index.js"></script>
+</body>
+</html>

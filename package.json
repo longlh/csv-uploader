@@ -1,0 +1,20 @@
+{
+  "name": "csv-uploader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:longlh/csv-uploader.git",
+  "author": "LongLH <d@dapps.me>",
+  "license": "MIT",
+  "dependencies": {
+    "csv-stream": "0.1.3",
+    "express": "4.15.3",
+    "express-plupload": "0.2.2",
+    "fast-csv": "2.4.0",
+    "formidable": "1.1.1",
+    "jquery": "3.2.1",
+    "kue": "0.11.6",
+    "mysql2": "1.3.5",
+    "plupload": "2.3.2",
+    "sequelize": "4.2.0",
+  },
+}
