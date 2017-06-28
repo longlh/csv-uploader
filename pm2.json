@@ -1,0 +1,19 @@
+{
+	"apps": [{
+		"name": "csv-webserver",
+		"cwd": "/home/ubuntu/csv-uploader/server",
+		"script": "index.js"
+	}, {
+		"name": "csv-reader",
+		"cwd": "/home/ubuntu/csv-uploader/workers",
+		"script": "reader.js"
+	}, {
+		"name": "csv-writer-1",
+		"cwd": "/home/ubuntu/csv-uploader/workers",
+		"script": "writer.js"
+	}, {
+		"name": "csv-writer-2",
+		"cwd": "/home/ubuntu/csv-uploader/workers",
+		"script": "writer.js"
+	}]
+}
