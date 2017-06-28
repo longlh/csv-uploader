@@ -1,5 +1,4 @@
 const kue = require('kue');
-const mysql = require('mysql');
 
 const Policy = require('../shared/models').Policy;
 
